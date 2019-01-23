@@ -1,12 +1,3 @@
-<?php
-	$ip = $_SERVER['REMOTE_ADDR'];
-
-    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-        $ip = $_SERVER['HTTP_CLIENT_IP'];
-    } else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +16,6 @@
 				<input type="text" class="txtinput" name="user" id="user"><br />
 				&nbsp;&nbsp;Password<br />
 				<input type="password" class="txtinput" name="pass"><br />
-				<input type="hidden" name="ip" value="<?php echo $ip; ?>">
 				<input type="submit" id="submit" name="submit" value="Login"><br />
 			</form>
 			<p id="txtor">-----Or-----</p>

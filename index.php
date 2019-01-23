@@ -16,8 +16,8 @@ $pspidentity= array('PlayStation Portable');
 $iPhoneidentity= array('iphone');
  
  
-$linkformobile = "mobile.php";
-$linkforweb = "desktop.php";
+$linkformobile = "mobile.html";
+$linkforweb = "desktop.html";
  
 $userBrowser = strtolower($_SERVER['HTTP_USER_AGENT']); 
 $userAccept= strtolower($_SERVER['HTTP_ACCEPT']);
